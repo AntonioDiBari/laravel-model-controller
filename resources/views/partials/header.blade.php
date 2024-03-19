@@ -9,7 +9,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a aria-current="page" class="nav-link active" href="{{ route('book.index') }}">Libri</a>
+                        <a aria-current="page" class="nav-link active" href="{{ route('movie.index') }}">Libri</a>
                     </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>

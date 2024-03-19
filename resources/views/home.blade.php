@@ -10,7 +10,7 @@
                     <div class="col-3">
                         <div class="card">
                             <div class="card-body">
-                                <a href="{{ route('book.show', ['id' => $index + 1]) }}">
+                                <a href="{{ route('movie.show', $movie) }}">
                                     {{ $movie->id }}) {{ $movie->title }}</a>
                             </div>
                         </div>

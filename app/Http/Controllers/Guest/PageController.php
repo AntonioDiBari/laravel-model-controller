@@ -12,12 +12,12 @@ class PageController extends Controller
         $movies = Movie::all();
         return view("home", compact("movies"));
     }
-    public function show(int $id)
+    public function show(Movie $movie)
     {
-        $book = Movie::find($id);
-        if (empty ($book)) {
-            return abort(404);
-        }
-        return view("show", compact("book"));
+        // $book = Movie::find($id);
+        // if (empty ($movie)) {
+        //     return abort(404);
+        // }
+        return view("show", compact("movie"));
     }
 }

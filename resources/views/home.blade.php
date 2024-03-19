@@ -5,12 +5,13 @@
 @section('main-content')
     <section>
         <div class="container py-4">
-            <div class="row">
-                @forelse ($movies as $movie)
+            <div class="row g-3">
+                @forelse ($movies as $index => $movie)
                     <div class="col-3">
                         <div class="card">
                             <div class="card-body">
-                                {{ $movie->id }}) {{ $movie->title }}
+                                <a href="{{ route('book.show', ['id' => $index + 1]) }}">
+                                    {{ $movie->id }}) {{ $movie->title }}</a>
                             </div>
                         </div>
                     </div>
